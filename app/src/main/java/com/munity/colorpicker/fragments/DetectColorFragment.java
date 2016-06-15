@@ -115,10 +115,10 @@ public class DetectColorFragment extends Fragment {
     }
 
     private void dialogColor(Activity context, Point p, final int r, final int g, final int b, int x, int y) {
-        int popupWidth = 450;
-        int popupHeight = 200;
-        int OFFSET_X = x - 220;
-        int OFFSET_Y = y - 100;
+        int popupWidth = (int) getResources().getDimension(R.dimen.popup_width);
+        int popupHeight = (int) getResources().getDimension(R.dimen.popup_height);
+        int OFFSET_X = x - (int) getResources().getDimension(R.dimen.popup_width_sub);
+        int OFFSET_Y = y - (int) getResources().getDimension(R.dimen.popup_height_sub);
         RelativeLayout viewGroup = (RelativeLayout) context.findViewById(R.id.linearLayout1);
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = layoutInflater.inflate(R.layout.dialog_color, viewGroup);
