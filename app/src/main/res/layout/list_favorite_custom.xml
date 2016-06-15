@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.munity.colorpicker.views.SwipeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    app:clickToClose="true"
+    android:background="@drawable/shadow" >
+
+    <LinearLayout
+        android:background="@color/transparnet"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/share_icon"
+            android:tint="@color/move"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@color/transparnet"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/deleteButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/delete_icon"
+            android:tint="@color/move"
+            android:background="@color/transparnet"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.munity.colorpicker.views.CircleImageView
+            android:id="@+id/colorImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/move"
+            android:layout_margin="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/rgbTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RGB"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:textColor="@color/move"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/hexTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEX"
+                android:layout_below="@id/rgbTextView"
+                android:textSize="20dp"
+                android:textColor="@color/move"
+                android:layout_margin="5dp"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.munity.colorpicker.views.SwipeLayout>

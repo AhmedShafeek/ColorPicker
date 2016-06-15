@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/gallaryImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"  />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#80000000"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/ownerNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_above="@+id/postTimeTextView"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/ownerIcon"/>
+
+        <ImageView
+            android:id="@+id/ownerIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/user_icon"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_above="@+id/postTimeTextView" />
+
+        <TextView
+            android:id="@+id/postTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_above="@+id/photoNameTextView"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/timeIcon" />
+
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/date_icon"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_above="@+id/photoNameTextView" />
+
+        <TextView
+            android:id="@id/photoNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/photoIcon"/>
+
+        <ImageView
+            android:id="@+id/photoIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/image_icon"
+            android:gravity="left"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

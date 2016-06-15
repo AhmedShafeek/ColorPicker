@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Color Picker</string>
+    <string name="choose_photo">Choose  Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="instagram">Instagram</string>
+    <string name="flickr">Flickr</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="favorite_empty">Favorite Empty</string>
+    <string name="disconnect_from_instagram">Disconnect from Instagram?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="color_added">Color Added</string>
+</resources>

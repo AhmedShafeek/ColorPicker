@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout1"
+    android:background="@color/transparnet" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:paddingBottom="35dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/rgbTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dddddd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/hexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dddddd"
+            android:layout_below="@+id/rgbTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/addToFavorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/favourite_icon"
+            android:tint="@color/move"
+            android:layout_margin="2dp"/>
+
+    </RelativeLayout>
+
+    <com.munity.colorpicker.views.CircleImageView
+        android:id="@+id/colorDetectImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

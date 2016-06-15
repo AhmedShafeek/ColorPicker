@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.munity.colorpicker.ChoosePhotoActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/move"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/favourite_icon"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@mipmap/background"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/choosePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/choose_photo"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:drawableLeft="@mipmap/image_icon"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:onClick="choosePhoto"
+            android:background="@color/transparnet" />
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/take_photo"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:drawableLeft="@mipmap/camera_icon"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:onClick="takePhoto"
+            android:background="@color/transparnet"/>
+
+        <Button
+            android:id="@+id/takePhotoInstagramButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/instagram"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:drawableLeft="@mipmap/instagram_icon"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:onClick="instagram"
+            android:background="@color/transparnet"/>
+
+        <Button
+            android:id="@+id/takePhotoFlickrButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/flickr"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:drawableLeft="@mipmap/flickr_icon"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:onClick="flickr"
+            android:background="@color/transparnet"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/splashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/move"
+        android:gravity="center"
+        android:clickable="true"
+        android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/logo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
